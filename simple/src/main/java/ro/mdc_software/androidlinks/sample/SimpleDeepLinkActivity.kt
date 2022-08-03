@@ -2,6 +2,9 @@ package ro.mdc_software.androidlinks.sample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.Text
 
 private const val TAG = "SimpleDeepLinkActivity"
 
@@ -14,7 +17,12 @@ class SimpleDeepLinkActivity : ComponentActivity() {
         val deviceId = deepLink?.getQueryParameter("deviceId")
         val appId = deepLink?.getQueryParameter("appId")
 
-        println("$TAG: deviceId = $deviceId")
-        println("$TAG: appId = $appId")
+        setContent {
+            Column {
+                Text(TAG)
+                Text("deviceId = $deviceId")
+                Text("appId = $appId")
+            }
+        }
     }
 }
