@@ -6,20 +6,24 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="ro.mdc_software.androidlinks.nav.HomeFragment" />
+        android:name="ro.mdc_software.androidlinks.nav.HomeFragment"
+        android:label="HOME" />
 
     <fragment
         android:id="@+id/navigation_nav"
-        android:name="ro.mdc_software.androidlinks.nav.NavFragment">
+        android:name="ro.mdc_software.androidlinks.nav.NavFragment"
+        android:label="NAV">
 
         <argument
             android:name="deviceId"
-            app:argType="integer" />
+            app:argType="string" />
 
         <argument
             android:name="appId"
-            app:argType="string"
-            app:nullable="true" />
+            app:argType="string" />
+
+        <deepLink app:uri="cosmin://nav/?deviceId={deviceId}&amp;appId={appId}" />
+
     </fragment>
 
 </navigation>

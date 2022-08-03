@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/compose" />
             <option value="$PROJECT_DIR$/nav" />
             <option value="$PROJECT_DIR$/simple" />
+            <option value="$PROJECT_DIR$/web" />
           </set>
         </option>
       </GradleProjectSettings>

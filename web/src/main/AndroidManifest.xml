@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndroidLinks"
-        tools:targetApi="31">
+        android:theme="@style/Theme.AndroidLinks">
 
         <activity
-            android:name=".SimpleDeepLinkActivity"
-            android:exported="true">
+            android:name=".WebLinkActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidLinks">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,17 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <!-- adb shell am start -a android.intent.action.VIEW -d "cosmin://simple/?deviceId=3943826401&appId=8abe413b-2b74-4ee5-83aa-30d971961d63" -->
+            <!-- adb shell am start -a android.intent.action.VIEW -d "https://mdc-software.ro/?deviceId=3943826401&appId=8abe413b-2b74-4ee5-83aa-30d971961d63" -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data
-                    android:host="simple"
-                    android:pathPrefix="/"
-                    android:scheme="cosmin" />
+                <data android:scheme="https" />
+                <data android:host="mdc-software.ro" />
             </intent-filter>
 
         </activity>

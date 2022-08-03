@@ -16,3 +16,4 @@ rootProject.name = "AndroidLinks"
 include ':simple'
 include ':compose'
 include ':nav'
+include ':web'

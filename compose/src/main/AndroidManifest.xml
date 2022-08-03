@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <!-- adb shell am start -a android.intent.action.VIEW -d cosmin://compose/?deviceId=3943826401&appId=8abe413b-2b74-4ee5-83aa-30d971961d63 -->
+            <!-- adb shell am start -a android.intent.action.VIEW -d "cosmin://compose/?deviceId=3943826401&appId=8abe413b-2b74-4ee5-83aa-30d971961d63" -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
