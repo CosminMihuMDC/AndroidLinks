@@ -30,6 +30,7 @@
 
                 <data
                     android:host="mdc-software.ro"
+                    android:pathPrefix="/"
                     android:scheme="https" />
             </intent-filter>
 

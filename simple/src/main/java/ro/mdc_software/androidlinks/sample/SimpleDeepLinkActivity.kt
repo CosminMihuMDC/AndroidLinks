@@ -20,6 +20,7 @@ class SimpleDeepLinkActivity : ComponentActivity() {
         setContent {
             Column {
                 Text(TAG)
+                Text("deepLink = $deepLink")
                 Text("deviceId = $deviceId")
                 Text("appId = $appId")
             }
