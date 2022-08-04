@@ -6,9 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 
-private const val TAG = "SimpleDeepLinkActivity"
+private const val TAG = "DefaultDeepLinkActivity"
 
-class SimpleDeepLinkActivity : ComponentActivity() {
+class DefaultDeepLinkActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

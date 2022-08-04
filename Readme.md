@@ -1,11 +1,13 @@
 # Deep Links to App Content Examples
 
-### :simple
+#
+
+### :default
 
 - Deep Links: https://developer.android.com/training/app-links/deep-linking
 
 ```console
-adb shell am start -a android.intent.action.VIEW -d "cosmin://nav/?deviceId=3943826401&appId=8abe413b-2b74-4ee5-83aa-30d971961d63"
+adb shell am start -a android.intent.action.VIEW -d "cosmin://default/?deviceId=3943826401&appId=8abe413b-2b74-4ee5-83aa-30d971961d63"
 ```
 
 ### :nav

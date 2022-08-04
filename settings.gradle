@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidLinks"
-include ':simple'
+include ':default'
 include ':compose'
 include ':nav'
 include ':web'
