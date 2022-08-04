@@ -23,11 +23,13 @@
             <!-- adb shell am start -a android.intent.action.VIEW -d "https://mdc-software.ro/?deviceId=3943826401&appId=8abe413b-2b74-4ee5-83aa-30d971961d63" -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="https" />
-                <data android:host="mdc-software.ro" />
+                <data
+                    android:host="mdc-software.ro"
+                    android:scheme="https" />
             </intent-filter>
 
         </activity>
